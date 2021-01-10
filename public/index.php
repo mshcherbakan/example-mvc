@@ -9,6 +9,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // add autoload
+// add new line test
 // new place for conflict
 require 'autoload.php';
 
