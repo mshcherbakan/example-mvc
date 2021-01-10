@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Model;
 
+use App\Utils\Config;
 use PDO;
 
 abstract class Model
@@ -34,7 +35,7 @@ abstract class Model
     {
         if (!isset(self::$db)) {
             try {
-                $dsn = sprintf('mysql:host=%s;dbname=%s', '192.168.10.10', 'testdb');
+                $dsn = sprintf('mysql:host=%s;dbname=%s', Config::get('DBHOST'), Config::get('DBNAME'));
                 self::$db = new PDO($dsn, 'testuser', 'qwerty');
                 self::$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             } catch (PDOException $exception) {
