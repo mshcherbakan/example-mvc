@@ -15,3 +15,7 @@ function error($name)
     }
     return null;
 }
+
+function parts(string $template) {
+    require __DIR__ . '/../parts/' . $template;
+}

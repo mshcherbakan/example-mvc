@@ -11,7 +11,7 @@
     <title><?= $title;?></title>
 </head>
 <body>
-    <?php require __DIR__ . '/../parts/nav.template.php';?>
+    <?php parts('nav.template.php'); ?>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
