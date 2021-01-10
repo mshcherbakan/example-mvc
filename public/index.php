@@ -11,6 +11,8 @@ error_reporting(E_ALL);
 // add autoload
 // add new line test
 // new place for conflict
+// add new row
+// add one more
 require 'autoload.php';
 
 $autoloader = new Psr4AutoloaderClass();
