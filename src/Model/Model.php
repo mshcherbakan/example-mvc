@@ -35,7 +35,7 @@ abstract class Model
     {
         if (!isset(self::$db)) {
             try {
-                $dsn = sprintf('mysql:host=%s;dbname=%s', Config::get('DBHOST'), Config::get('DBNAME'));
+                $dsn = sprintf('mysql:host=%s;dbname=%s', '192.168.10.10', 'testdb');
                 self::$db = new PDO($dsn, 'testuser', 'qwerty');
                 self::$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             } catch (PDOException $exception) {
