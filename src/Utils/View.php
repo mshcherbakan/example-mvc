@@ -22,6 +22,6 @@ class View
         // меняем все точки на слеши
         $templatePath = str_replace('.', '/', $template);
         // формируем полный путь к файлу включая назавние файла
-        return require $this->templateDir . '/' . $templatePath . '.template.php';
+        return file_get_contents($this->templateDir . '/' . $templatePath . '.template.php');
     }
 }
