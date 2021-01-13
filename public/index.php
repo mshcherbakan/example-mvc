@@ -25,4 +25,12 @@ require __DIR__ . '/../helpers.php';
 $router = new Router();
 $router->process();
 
+
+
+
+echo 'OK';
+
+
+
+
 echo 'OK';
